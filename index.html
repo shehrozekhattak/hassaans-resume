@@ -5,111 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassaan Ul Haq - Resume</title>
     <style>
-        /* IVY LEAGUE STANDARD FORMATTING */
+        /* --- GLOBAL RESET & TYPOGRAPHY --- */
         @page {
             margin: 0;
             size: letter;
         }
         body {
-            font-family: "Garamond", "Times New Roman", serif;
-            line-height: 1.15;
-            color: #000000;
-            background: #ffffff;
+            /* Using a clean, modern sans-serif stack similar to the sample */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333333; /* Dark charcoal text */
+            line-height: 1.5;
             margin: 0;
-            padding: 40px 50px;
-            -webkit-print-color-adjust: exact;
+            padding: 40px 50px; /* Standard margins for PDF print */
+            background-color: #fff;
+            -webkit-print-color-adjust: exact; /* Ensures colors print correctly */
         }
-        
-        /* HEADER */
+
+        /* --- HEADER SECTION --- */
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         h1 {
-            font-size: 24pt;
-            font-weight: normal; 
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin: 0 0 5px 0;
+            font-size: 28pt;
+            font-weight: 800; /* Extra bold */
+            margin: 0 0 10px 0;
             color: #000;
         }
-        .contact-info {
-            font-size: 11pt;
-            margin-bottom: 5px;
-            color: #000;
-        }
-        .contact-info span {
-            margin: 0 5px;
-        }
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        /* SECTIONS */
-        section {
+        /* The thick pink line under the name */
+        .header-divider {
+            height: 4px;
+            background-color: #DA8A8A; /* Salmon-pink matching the sample */
+            width: 100%;
             margin-bottom: 15px;
         }
+        .contact-info {
+            font-size: 10pt;
+            color: #333;
+        }
+        .contact-info span {
+            margin: 0 3px;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* --- SECTION HEADERS (The pink bars) --- */
         h2 {
-            font-size: 12pt;
+            background-color: #DA8A8A; /* Salmon-pink background */
+            color: white;
+            padding: 8px 15px;
+            font-size: 11pt;
             text-transform: uppercase;
-            border-bottom: 1px solid #000;
-            padding-bottom: 3px;
-            margin: 15px 0 10px 0;
             font-weight: bold;
+            margin: 25px 0 15px 0;
             letter-spacing: 1px;
-            color: #000;
         }
 
-        /* CONTENT LAYOUT */
-        .role-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
+        /* --- GENERAL CONTENT --- */
+        p {
+            font-size: 10.5pt;
+            margin: 0 0 10px 0;
+            text-align: justify;
         }
-        .company {
-            font-weight: bold;
-            font-size: 11pt;
-            text-transform: uppercase;
-        }
-        .location {
-            font-size: 11pt;
-        }
-        .title-row {
-            display: flex;
-            justify-content: space-between;
-            font-style: italic;
-            margin-bottom: 3px;
-        }
-        .title {
-            font-weight: bold;
-        }
-        .date {
-            font-style: italic;
-        }
-
-        /* BULLETS */
         ul {
-            margin: 0 0 0 18px;
+            margin: 5px 0 0 20px;
             padding: 0;
             list-style-type: disc;
         }
         li {
-            font-size: 11pt;
-            margin-bottom: 3px;
+            font-size: 10.5pt;
+            margin-bottom: 6px; /* Slightly more breathing room between bullets */
             text-align: justify;
-            color: #000;
         }
 
-        /* SKILLS GRID */
-        .skills-container {
+        /* --- EXPERIENCE SECTION LAYOUT (2-Column) --- */
+        .job-container {
+            display: flex;
+            margin-bottom: 25px; /* Spacing between job entries */
+        }
+        /* Left column for Dates/Location */
+        .job-left {
+            flex: 0 0 140px; /* Fixed width for the left column */
+            font-size: 9pt;
+            font-weight: bold;
+            color: #555; /* Slightly lighter text for dates */
+            padding-right: 20px;
+            line-height: 1.4;
+        }
+        /* Right column for Content */
+        .job-right {
+            flex: 1; /* Takes remaining space */
+        }
+        .job-title {
             font-size: 11pt;
-            margin-top: 5px;
+            font-weight: bold;
+            margin: 0 0 2px 0;
             color: #000;
         }
-        .skill-category {
+        .company-name {
+            font-size: 11pt;
             font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* --- SKILLS SECTION --- */
+        .skill-item {
+            font-size: 10.5pt;
+            margin-bottom: 8px;
+        }
+        .skill-item strong {
+            color: #000;
         }
     </style>
 </head>
@@ -117,95 +122,96 @@
 
     <header>
         <h1>Hassaan Ul Haq</h1>
+        <div class="header-divider"></div>
         <div class="contact-info">
-            <span>Islamabad, Pakistan</span> |
-            <span>+92 333 5783685</span> |
-            <a href="mailto:hassaanhaq44@gmail.com">hassaanhaq44@gmail.com</a>
+            Islamabad, Pakistan • +92 333 5783685 • <a href="mailto:hassaanhaq44@gmail.com">hassaanhaq44@gmail.com</a>
         </div>
     </header>
 
-    <section>
-        <h2>Professional Profile</h2>
-        <div style="font-size: 11pt; text-align: justify; color: #000;">
-            Strategic Project Manager and Business Executive with over 3 years of experience in <strong>cross-border technology transfer</strong> and operational governance across GCC and Central Asian markets. Expert in translating commercial objectives into structured <strong>concept papers and implementation roadmaps</strong>. Proven track record of managing national-scale infrastructure projects (NEOM, Riyadh) and facilitating high-value international agreements exceeding <strong>PKR 150M</strong>. Adept at defining RACI matrices, mitigating regulatory risks, and ensuring standardization of documentation for future project scalability.
-        </div>
-    </section>
+    <h2>Professional Profile</h2>
+    <p>
+        Strategic Project Manager and Business Executive with over 3 years of experience in cross-border technology transfer and operational governance across GCC and Central Asian markets. Expert in translating commercial objectives into structured concept papers and implementation roadmaps. Proven track record of managing national-scale infrastructure projects (NEOM, Riyadh) and facilitating high-value international agreements exceeding PKR 150M. Adept at defining RACI matrices, mitigating regulatory risks, and ensuring standardization of documentation for future project scalability.
+    </p>
 
-    <section>
-        <h2>Professional Experience</h2>
+    <h2>Work Experience</h2>
 
-        <div class="role-header">
-            <span class="company">Synercon Group</span>
-            <span class="location">Islamabad, Pakistan</span>
+    <div class="job-container">
+        <div class="job-left">
+            10/2023 – 01/2025<br>
+            Islamabad, Pakistan
         </div>
-        <div class="title-row">
-            <span class="title">Business Development Executive (Lead - Cross Border Projects)</span>
-            <span class="date">Oct 2023 – Jan 2025</span>
+        <div class="job-right">
+            <div class="job-title">Business Development Executive (Lead - Cross Border Projects)</div>
+            <div class="company-name">Synercon Group</div>
+            <ul>
+                <li>Spearheaded operational oversight for engineering/IT projects in NEOM and Riyadh, defining responsibility matrices (RACI) and governance structures to ensure alignment between international partners and local technical teams.</li>
+                <li>Authored concept notes and business cases for localized market entry strategies across GCC and Central Asia, successfully establishing partnership frameworks in 2 out of 3 target regions.</li>
+                <li>Facilitated high-value B2B agreements and MoUs exceeding PKR 150 Million, coordinating with legal and senior management to ensure compliance with cross-border regulatory and IP standards.</li>
+                <li>Enhanced CRM workflows and documentation compliance, reducing cross-border operational delays by 17% through the automation of reporting protocols and risk mitigation planning.</li>
+                <li>Executed a standardized implementation roadmap that increased international partner acquisition by 1.5% and improved conversion rates for BIM and IT infrastructure projects.</li>
+            </ul>
         </div>
-        <ul>
-            <li><strong>Technology Transfer & Governance:</strong> Spearheaded operational oversight for engineering/IT projects in NEOM and Riyadh, defining responsibility matrices (RACI) and governance structures to ensure alignment between international partners and local technical teams.</li>
-            <li><strong>Concept Development & Frameworks:</strong> Authored concept notes and business cases for localized market entry strategies across GCC and Central Asia, successfully establishing partnership frameworks in 2 out of 3 target regions.</li>
-            <li><strong>Contract Negotiation & Licensing:</strong> Facilitated high-value B2B agreements and MoUs exceeding <strong>PKR 150 Million</strong>, coordinating with legal and senior management to ensure compliance with cross-border regulatory and IP standards (Iran/Afghanistan).</li>
-            <li><strong>Process Optimization:</strong> Enhanced CRM workflows and documentation compliance, reducing cross-border operational delays by <strong>17%</strong> through the automation of reporting protocols and risk mitigation planning.</li>
-            <li><strong>Strategic Implementation:</strong> Executed a standardized implementation roadmap that increased international partner acquisition by 1.5% and improved conversion rates for BIM and IT infrastructure projects.</li>
-        </ul>
+    </div>
 
-        <br>
+    <div class="job-container">
+        <div class="job-left">
+            07/2022 – 09/2023<br>
+            Islamabad, Pakistan
+        </div>
+        <div class="job-right">
+            <div class="job-title">Management Intern (Project Coordinator)</div>
+            <div class="company-name">Sunrise Digital Marketing</div>
+            <ul>
+                <li>Managed end-to-end execution of 10+ digital technology campaigns for major brands (Pepsi, Coca-Cola), translating client requirements into technical deliverables and tracking milestones.</li>
+                <li>Facilitated knowledge transfer workshops between design, dev, and marketing teams to resolve technical bottlenecks, effectively cutting project turnaround time by 17%.</li>
+                <li>Maintained a 98% on-time delivery rate by implementing clear timeline management tools and standardizing acceptance criteria for technical outputs.</li>
+            </ul>
+        </div>
+    </div>
 
-        <div class="role-header">
-            <span class="company">Sunrise Digital Marketing</span>
-            <span class="location">Islamabad, Pakistan</span>
+    <h2>Education</h2>
+    
+    <div class="job-container">
+        <div class="job-left">
+            06/2023<br>
+            Islamabad, Pakistan
         </div>
-        <div class="title-row">
-            <span class="title">Management Intern (Project Coordinator)</span>
-            <span class="date">Jul 2022 – Sep 2023</span>
+        <div class="job-right">
+            <div class="job-title">Bachelor of Business Administration (BBA)</div>
+            <div class="company-name">Bahria University</div>
+            <ul>
+                <li>Specialization in Strategic Management & Business Planning.</li>
+            </ul>
         </div>
-        <ul>
-            <li><strong>Project Coordination:</strong> Managed end-to-end execution of 10+ digital technology campaigns for major brands (Pepsi, Coca-Cola), translating client requirements into technical deliverables and tracking milestones.</li>
-            <li><strong>Knowledge Transfer:</strong> Facilitated workshops between design, dev, and marketing teams to resolve technical bottlenecks, effectively cutting project turnaround time by <strong>17%</strong>.</li>
-            <li><strong>Performance Metrics:</strong> Maintained a <strong>98% on-time delivery rate</strong> by implementing clear timeline management tools and standardizing acceptance criteria for technical outputs.</li>
-            <li><strong>Resource Planning:</strong> Optimized project budgets by 10% through effective vendor coordination and resource allocation planning.</li>
-        </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>Education</h2>
-        <div class="role-header">
-            <span class="company">Bahria University</span>
-            <span class="location">Islamabad, Pakistan</span>
+    <div class="job-container">
+        <div class="job-left">
+            09/2021<br>
+            Islamabad, Pakistan
         </div>
-        <div class="title-row">
-            <span class="title">Bachelor of Business Administration (BBA)</span>
-            <span class="date">Jun 2023</span>
+        <div class="job-right">
+            <div class="job-title">GED Diploma</div>
+            <div class="company-name">Uniplace</div>
+            <ul>
+                <li>Focus: Research Methods & Data Analysis.</li>
+            </ul>
         </div>
-        <ul>
-            <li>Specialization in Strategic Management & Business Planning.</li>
-        </ul>
-        
-        <div style="margin-top: 5px;"></div>
+    </div>
 
-        <div class="role-header">
-            <span class="company">Uniplace</span>
-            <span class="location">Islamabad, Pakistan</span>
-        </div>
-        <div class="title-row">
-            <span class="title">GED Diploma</span>
-            <span class="date">Sep 2021</span>
-        </div>
-        <ul>
-            <li>Focus: Research Methods & Data Analysis.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Core Competencies & Technical Skills</h2>
-        <div class="skills-container">
-            <span class="skill-category">Project Governance:</span> Technology Transfer Frameworks, RACI Matrix, Concept Note Development, Implementation Roadmaps.<br>
-            <span class="skill-category">Commercial & Legal:</span> Joint Ventures (JV), MoUs/NDAs, Licensing Agreements, RFP/RFQ Responses, Risk Mitigation.<br>
-            <span class="skill-category">Operational Tools:</span> Microsoft Power BI, CRM (HubSpot, Zoho), ERP Systems, Trello, Workflow Automation.<br>
-            <span class="skill-category">Languages:</span> English (Full Professional Proficiency), Urdu (Native).
-        </div>
-    </section>
+    <h2>Technical Skills & Competencies</h2>
+    <div class="skill-item">
+        <strong>Project Governance:</strong> Technology Transfer Frameworks, RACI Matrix, Concept Note Development, Implementation Roadmaps.
+    </div>
+    <div class="skill-item">
+        <strong>Commercial & Legal:</strong> Joint Ventures (JV), MoUs/NDAs, Licensing Agreements, RFP/RFQ Responses, Risk Mitigation.
+    </div>
+    <div class="skill-item">
+        <strong>Operational Tools:</strong> Microsoft Power BI, CRM (HubSpot, Zoho), ERP Systems, Trello, Workflow Automation.
+    </div>
+    <div class="skill-item">
+        <strong>Languages:</strong> English (Full Professional Proficiency), Urdu (Native).
+    </div>
 
 </body>
 </html>
