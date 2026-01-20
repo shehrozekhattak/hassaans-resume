@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassaan Ul Haq - Resume</title>
+    <style>
+        /* IVY LEAGUE STANDARD FORMATTING */
+        @page {
+            margin: 0;
+            size: letter;
+        }
+        body {
+            font-family: "Garamond", "Times New Roman", serif;
+            line-height: 1.15; /* Compact line height */
+            color: #000;
+            background: #fff;
+            margin: 0;
+            padding: 40px 50px; /* 0.5 to 0.75 inch margins equivalent */
+            -webkit-print-color-adjust: exact;
+        }
+        
+        /* HEADER */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24pt;
+            font-weight: normal; /* Ivy League style prefers non-bolded caps or small caps */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 5px 0;
+        }
+        .contact-info {
+            font-size: 11pt;
+            margin-bottom: 5px;
+        }
+        .contact-info span {
+            margin: 0 5px;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* SECTIONS */
+        section {
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000; /* Distinct section divider */
+            padding-bottom: 3px;
+            margin: 15px 0 10px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* CONTENT LAYOUT */
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .company {
+            font-weight: bold;
+            font-size: 11pt;
+            text-transform: uppercase;
+        }
+        .location {
+            font-size: 11pt;
+        }
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .date {
+            font-style: italic;
+        }
+
+        /* BULLETS */
+        ul {
+            margin: 0 0 0 18px;
+            padding: 0;
+            list-style-type: disc; /* Simple, classic bullets */
+        }
+        li {
+            font-size: 11pt;
+            margin-bottom: 3px;
+            text-align: justify; /* Clean edges on both sides */
+        }
+
+        /* SKILLS GRID */
+        .skills-container {
+            font-size: 11pt;
+            margin-top: 5px;
+        }
+        .skill-category {
+            font-weight: bold;
+        }
